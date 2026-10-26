@@ -1,0 +1,17 @@
+.photo-reveal {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity 650ms ease, transform 650ms ease;
+}
+
+.photo-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-reveal {
+    transition: none;
+    transform: none;
+  }
+}
